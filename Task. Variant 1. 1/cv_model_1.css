@@ -1,19 +1,19 @@
 /* ---------------------- GLOBAL ---------------------- */
-.global-container{
+body{
 	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	width: 2480px;
 	margin: 0 auto;
 }
+body div{
+	display: inline-block;
+	vertical-align: top;
+}
 p{
 	margin: 0 0;
-}
-.info-column{
-	display: inline-block;
-	vertical-align:top;
+	line-height: 58px;
 }
 .left-infoblock{
 	margin-left:151px;
-	margin-top:121px;
 	width: 1220px;
 }
 .right-infoblock{
@@ -27,6 +27,7 @@ p{
 	padding-left: 37px;
 	font-size: 44px;
 	font-weight: bold;
+	width:100%;
 }
 
 /* ---------------------- HEADER ---------------------- */
@@ -65,7 +66,7 @@ p{
 /* ---------------------- ABOUT ---------------------- */
 .left-infoblock.about{
 	height: 524px;
-	margin-top: 215px;
+	margin-top: 95px;
 }
 .left-infoblock.about p{
 	padding-top: 22px;
@@ -76,27 +77,28 @@ p{
 
 /* ----------------- WORK EXPERIENCE ----------------- */
 .work-experience .infoblock-header{
+	margin-top:80px;
 	margin-bottom: 120px;
 }
 .experience-record,
 .education-record{
-	margin-bottom: 34px;
+	margin-bottom: 44px;
 }
 .experience-record div, 
 .education-record div{
 	display: inline-block;
 	vertical-align: top;
-	font-size: 53px;
+	font-size: 55px;
 }
 .experience-record div:nth-child(2){
-	width: 262px;		
+	width: 284px;		
 	text-align: center;
 	line-height:35px;
 	padding-top: 15px;
 }
 .experience-record div:last-child{
-	width: 700px;
-	padding-left: 20px;
+	width: 800px;
+	padding-left: 40px;
 }
 .experience-record div p:first-child,
 .education-record div p:first-child{
@@ -108,8 +110,8 @@ p{
 }
 .experience-record div p:last-child{
 	height: 202px;
-	font-size: 49px;
-	line-height: 50px;	
+	font-size: 55px;
+	line-height: 55px;	
 }
 .marker-icon{
 	width: 69px;
@@ -117,14 +119,14 @@ p{
 }
 
 /* ----------------- PERSONAL DATA ----------------- */
-.personal-data .infoblock-header{
+ .personal-data .infoblock-header{
 	margin-top: 252px;
 	margin-bottom: 63px;
 }
 .personal-data div div{
 	display: inline-block;
 	line-height: 30px;
-	font-size: 37px;
+	font-size: 40px;
 }
 .personal-data div div div:first-child{
 	width: 321px;
@@ -136,9 +138,9 @@ p{
 
 /* ----------------- FORMAL EDUCATION ----------------- */
 /* mostly in section 'work experience' */
-.formal-education .infoblock-header{
-	margin-top: 50px;
-	margin-bottom: 69px;
+div .formal-education .infoblock-header{
+	margin-top: 95px;
+	margin-bottom: 39px;
 }
 .education-record div:last-child{
 	width: 440px;
@@ -169,7 +171,7 @@ p{
 	font-weight: bold;
 	width:442px;
 	display: inline-block;
-	padding-top:19px;
+	padding-top:10px;
 }
 .skills div div div{
 	height: 45px;
@@ -232,7 +234,7 @@ p{
 }
 .footer div{
 	display: inline-block;
-	font-size:50px;
+	font-size:62px;
 	font-weight: bold;
 }
 .contact-icon{
