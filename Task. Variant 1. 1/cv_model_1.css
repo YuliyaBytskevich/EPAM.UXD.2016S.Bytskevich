@@ -1,0 +1,270 @@
+/* ---------------------- GLOBAL ---------------------- */
+.global-container{
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	width: 2480px;
+	margin: 0 auto;
+}
+p{
+	margin: 0 0;
+}
+.info-column{
+	display: inline-block;
+	vertical-align:top;
+}
+.left-infoblock{
+	margin-left:151px;
+	margin-top:121px;
+	width: 1220px;
+}
+.right-infoblock{
+	margin-left:151px;
+	width: 836px;
+}
+.infoblock-header{
+	background-color: #dbdbdb;
+	height:60px;	
+	padding-top:8px;
+	padding-left: 37px;
+	font-size: 44px;
+	font-weight: bold;
+}
+
+/* ---------------------- HEADER ---------------------- */
+.photo-container{
+	float:left;
+	width: 605px;
+	height: 459px;
+	background-color: #cf4541;
+}
+.header-image{
+	width: 393px;
+	height:379px;
+	padding-top: 40px;
+	padding-left: 151px;
+}
+.headerName{
+	margin: 0px;
+	line-height: 90px;
+	font-size: 121px;
+	font-weight: bold;
+	width: 737px;
+	padding-top: 261px;
+	padding-left:634px;
+	vertical-align: bottom;
+}
+.headerJob{
+	margin: 0px;
+	line-height: 64px;
+	font-size: 84px;
+	color: #ef433f;
+	font-weight: lighter;
+	padding-top: 42px;
+	padding-left:650px;
+}
+
+/* ---------------------- ABOUT ---------------------- */
+.left-infoblock.about{
+	height: 524px;
+	margin-top: 215px;
+}
+.left-infoblock.about p{
+	padding-top: 22px;
+	line-height: 48px;
+	font-size: 42px;
+	font-weight: bold;
+}
+
+/* ----------------- WORK EXPERIENCE ----------------- */
+.work-experience .infoblock-header{
+	margin-bottom: 120px;
+}
+.experience-record,
+.education-record{
+	margin-bottom: 34px;
+}
+.experience-record div, 
+.education-record div{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 53px;
+}
+.experience-record div:nth-child(2){
+	width: 262px;		
+	text-align: center;
+	line-height:35px;
+	padding-top: 15px;
+}
+.experience-record div:last-child{
+	width: 700px;
+	padding-left: 20px;
+}
+.experience-record div p:first-child,
+.education-record div p:first-child{
+	color:red;	
+}
+.experience-record div p:nth-child(2),
+.education-record div p:nth-child(2){
+	font-weight: bold;
+}
+.experience-record div p:last-child{
+	height: 202px;
+	font-size: 49px;
+	line-height: 50px;	
+}
+.marker-icon{
+	width: 69px;
+	height: 69px;
+}
+
+/* ----------------- PERSONAL DATA ----------------- */
+.personal-data .infoblock-header{
+	margin-top: 252px;
+	margin-bottom: 63px;
+}
+.personal-data div div{
+	display: inline-block;
+	line-height: 30px;
+	font-size: 37px;
+}
+.personal-data div div div:first-child{
+	width: 321px;
+	font-weight: bold;
+}
+.personal-data div div div{
+	padding: 0 0 18px 0;
+}
+
+/* ----------------- FORMAL EDUCATION ----------------- */
+/* mostly in section 'work experience' */
+.formal-education .infoblock-header{
+	margin-top: 50px;
+	margin-bottom: 69px;
+}
+.education-record div:last-child{
+	width: 440px;
+}
+.education-record div:nth-child(2){
+	width: 315px;		
+	text-align: center;
+	line-height:35px;
+	padding-top: 15px;
+	
+}
+
+/* ----------------- SKILLS ----------------- */
+.skills .infoblock-header{
+	margin-top: 80px;
+	margin-bottom: 120px;
+	display:block;
+}
+.skills-group{
+	margin-bottom: 76px;
+}
+.skills div{
+	display: inline-block;	
+}
+.skills div div p{
+	line-height: 38px;
+	font-size: 42px;
+	font-weight: bold;
+	width:442px;
+	display: inline-block;
+	padding-top:19px;
+}
+.skills div div div{
+	height: 45px;
+	width: 393px;
+	float: right;
+	background-color: #dbdbdb;
+	margin-bottom: 55px;
+}
+.skills div div div div{
+	background-color: #cf4541;
+	float:left;
+}
+.skills div div div .leadership-prog{
+	width: 267px;
+}
+.skills div div div .management-prog{
+	width: 353px;
+}
+.skills div div div .writing-prog{
+	width: 222px;
+}
+.skills div div div .teamwork-prog{
+	width: 392px;
+}
+.skills div div div .photoshop-prog{
+	width: 368px;
+}
+.skills div div div .htmlcss-prog{
+	width: 242px;
+}
+.skills div div div .javascriot-prog{
+	width: 256px;
+}
+.skills div div div .dreamweaver-prog{
+	width: 322px;
+}
+.skills div div div .logic-prog{
+	width: 393px;
+}
+.skills div div div .artistic-prog{
+	width: 222px;
+}
+.skills div div div .teamworks-prog{
+	width: 352px;
+}
+.skills div div div .intuition-prog{
+	width: 368px;
+}
+
+/* ----------------- FOOTER ----------------- */
+.footer{
+	width: 2480px;
+	height: 200px;
+	margin: 150px auto 0 0;
+	vertical-align:center;
+}
+.footer div p{
+	padding: 0 280px 0 121px;
+	margin-top: 20px;
+}
+.footer div{
+	display: inline-block;
+	font-size:50px;
+	font-weight: bold;
+}
+.contact-icon{
+	width: 101px;
+	height: 101px;
+	float:left;
+}
+.footer div:first-child{
+	margin-left: 151px;
+}
+.footer div:last-child{
+	float:right;
+	margin-right: 121px;
+}
+.footer div:last-child p{
+	padding: 0 0 0 121px;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
