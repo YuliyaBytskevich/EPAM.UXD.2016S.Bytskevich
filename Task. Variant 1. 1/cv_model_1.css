@@ -1,16 +1,28 @@
 /* ---------------------- GLOBAL ---------------------- */
-body{
+html, body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+.global-wrapper{
 	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	width: 2480px;
 	margin: 0 auto;
+	min-height:100%;
+	position:relative;
+	background-color: white;
 }
-body div{
+.global-wrapper div{
 	display: inline-block;
 	vertical-align: top;
 }
 p{
 	margin: 0 0;
 	line-height: 58px;
+	word-wrap: break-word;
+}
+.content{
+	padding-bottom: 367px;
 }
 .left-infoblock{
 	margin-left:151px;
@@ -20,14 +32,23 @@ p{
 	margin-left:151px;
 	width: 836px;
 }
-.infoblock-header{
+h3{
 	background-color: #dbdbdb;
 	height:60px;	
 	padding-top:8px;
 	padding-left: 37px;
 	font-size: 44px;
 	font-weight: bold;
-	width:100%;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0;
+}
+.right-infoblock h3{
+	width: 2069px;
+}
+.right-infoblock h3{
+	width: 799px;
 }
 
 /* ---------------------- HEADER ---------------------- */
@@ -39,21 +60,20 @@ p{
 }
 .header-image{
 	width: 393px;
-	height:379px;
 	padding-top: 40px;
 	padding-left: 151px;
 }
-.headerName{
+h1{
 	margin: 0px;
 	line-height: 90px;
 	font-size: 121px;
 	font-weight: bold;
 	width: 737px;
 	padding-top: 261px;
-	padding-left:634px;
-	vertical-align: bottom;
+	margin-left:634px;
+	word-wrap: break-word;
 }
-.headerJob{
+h2{
 	margin: 0px;
 	line-height: 64px;
 	font-size: 84px;
@@ -61,11 +81,12 @@ p{
 	font-weight: lighter;
 	padding-top: 42px;
 	padding-left:650px;
+	width: 737px;
+	word-wrap: break-word;
 }
 
 /* ---------------------- ABOUT ---------------------- */
 .left-infoblock.about{
-	height: 524px;
 	margin-top: 95px;
 }
 .left-infoblock.about p{
@@ -76,55 +97,68 @@ p{
 }
 
 /* ----------------- WORK EXPERIENCE ----------------- */
-.work-experience .infoblock-header{
+.work-experience h3{
 	margin-top:80px;
 	margin-bottom: 120px;
 }
-.experience-record,
-.education-record{
+ul{
 	margin-bottom: 44px;
+	padding: 0;
 }
-.experience-record div, 
-.education-record div{
+ul li{
 	display: inline-block;
 	vertical-align: top;
 	font-size: 55px;
+	line-height:59px;
+	word-wrap: break-word;
+	margin-bottom:40px;
 }
-.experience-record div:nth-child(2){
-	width: 284px;		
+ul li div{
+	text-align:left;
+}
+ul li div:first-child{
+	width: 315px;		
 	text-align: center;
-	line-height:35px;
-	padding-top: 15px;
 }
-.experience-record div:last-child{
+ul li div:last-child {
 	width: 800px;
-	padding-left: 40px;
+	padding-left: 20px;
 }
-.experience-record div p:first-child,
-.education-record div p:first-child{
-	color:red;	
+ul li div h4{
+	color:red;
+	margin: 0;
+	font-size:inherit;
+	font-weight: inherit;
 }
-.experience-record div p:nth-child(2),
-.education-record div p:nth-child(2){
+ul li div h5{
+	margin: 0;
+	font-size:inherit;
 	font-weight: bold;
 }
-.experience-record div p:last-child{
-	height: 202px;
+.work-experience ul li div p{
 	font-size: 55px;
 	line-height: 55px;	
 }
-.marker-icon{
-	width: 69px;
-	height: 69px;
+.work-experience ul li:before,
+.formal-education ul li:before{
+    content: '';  
+    background: rgb(207,69,65);
+    height: 49px;
+    width: 49px;
+    transform: rotate(45deg);
+    line-height: 2em;
+    display: block;
+    float: left;
+	margin-left:12px;
 }
 
 /* ----------------- PERSONAL DATA ----------------- */
- .personal-data .infoblock-header{
+ .personal-data h3{
 	margin-top: 252px;
 	margin-bottom: 63px;
 }
 .personal-data div div{
-	display: inline-block;
+	
 	line-height: 30px;
 	font-size: 40px;
 }
@@ -135,123 +169,146 @@ p{
 .personal-data div div div{
 	padding: 0 0 18px 0;
 }
+form{
+	line-height: 49px;
+	font-size: 40px;
+	font-weight: bold;
+}
+form input{	
+	line-height: 30px;
+	font-size: 40px;
+	border: none;
+	float: right;
+}
+form label{
+	margin-right:50px;
+
+}
+
 
 /* ----------------- FORMAL EDUCATION ----------------- */
 /* mostly in section 'work experience' */
-div .formal-education .infoblock-header{
+.formal-education h3{
 	margin-top: 95px;
 	margin-bottom: 39px;
 }
-.education-record div:last-child{
-	width: 440px;
+.formal-education ul li div:last-child{
+	width: 433px;
 }
-.education-record div:nth-child(2){
-	width: 315px;		
+.formal-education ul li div:first-child{
+	width: 300px;		
 	text-align: center;
 	line-height:35px;
 	padding-top: 15px;
-	
 }
 
 /* ----------------- SKILLS ----------------- */
-.skills .infoblock-header{
+.skills h3{
 	margin-top: 80px;
 	margin-bottom: 120px;
 	display:block;
 }
-.skills-group{
-	margin-bottom: 76px;
+.skills ul li{
+	display: inline-block;
+	margin-bottom: 50px;
 }
-.skills div{
-	display: inline-block;	
+.skills ul li:nth-child(4n){
+	margin-bottom: 90px;
 }
-.skills div div p{
+.skills ul li h6{
+	margin: 0;
 	line-height: 38px;
 	font-size: 42px;
 	font-weight: bold;
-	width:442px;
+	width:430px;
 	display: inline-block;
 	padding-top:10px;
 }
-.skills div div div{
+.skills ul li div{
 	height: 45px;
 	width: 393px;
-	float: right;
 	background-color: #dbdbdb;
-	margin-bottom: 55px;
+	padding: 0;
 }
-.skills div div div div{
+.skills ul li div div{
 	background-color: #cf4541;
 	float:left;
 }
-.skills div div div .leadership-prog{
+.skills ul li div .leadership-prog{
 	width: 267px;
 }
-.skills div div div .management-prog{
+.skills ul li div .management-prog{
 	width: 353px;
 }
-.skills div div div .writing-prog{
+.skills ul li div .writing-prog{
 	width: 222px;
 }
-.skills div div div .teamwork-prog{
+.skills ul li div .teamwork-prog{
 	width: 392px;
 }
-.skills div div div .photoshop-prog{
+.skills ul li div .photoshop-prog{
 	width: 368px;
 }
-.skills div div div .htmlcss-prog{
+.skills ul li div .htmlcss-prog{
 	width: 242px;
 }
-.skills div div div .javascriot-prog{
+.skills ul li div .javascript-prog{
 	width: 256px;
 }
-.skills div div div .dreamweaver-prog{
+.skills ul li div .dreamweaver-prog{
 	width: 322px;
 }
-.skills div div div .logic-prog{
+.skills ul li div .logic-prog{
 	width: 393px;
 }
-.skills div div div .artistic-prog{
+.skills ul li div .artistic-prog{
 	width: 222px;
 }
-.skills div div div .teamworks-prog{
+.skills ul li div .teamworks-prog{
 	width: 352px;
 }
-.skills div div div .intuition-prog{
+.skills ul li div .intuition-prog{
 	width: 368px;
 }
 
 /* ----------------- FOOTER ----------------- */
 .footer{
-	width: 2480px;
+	width:100%;
 	height: 200px;
-	margin: 150px auto 0 0;
-	vertical-align:center;
+	position: absolute;
+	bottom:0;
+	left:0;
 }
-.footer div p{
-	padding: 0 280px 0 121px;
-	margin-top: 20px;
+.footer-content{
+	width: 2480px;
 }
-.footer div{
+.footer div div a{
+	padding-left: 130px;
+	text-decoration: none;
+	color: black;
+}
+.footer div div{
 	display: inline-block;
 	font-size:62px;
 	font-weight: bold;
+	height:101px;
+	width: 700px;
+	vertical-align: center;
+	background-repeat: no-repeat;
+	vertical-align:center;
 }
-.contact-icon{
-	width: 101px;
-	height: 101px;
-	float:left;
-}
-.footer div:first-child{
+.footer div div:first-child{
 	margin-left: 151px;
+	background-image: url(imgs/2.png);
 }
-.footer div:last-child{
+.footer div div:nth-child(2){
+	margin-left: 50px;
+	background-image: url(imgs/3.png);
+}
+.footer div div:last-child{
 	float:right;
 	margin-right: 121px;
-}
-.footer div:last-child p{
-	padding: 0 0 0 121px;
-	margin-top: 20px;
+	background-image: url(imgs/4.png);
 }
 
 
