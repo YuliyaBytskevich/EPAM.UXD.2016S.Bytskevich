@@ -63,26 +63,38 @@ h3{
 	padding-top: 40px;
 	padding-left: 151px;
 }
+.header div{
+	width:762px;
+}
+.header div div{
+	position: relative;
+	height: 345px;
+	word-wrap: break-word;
+}
 h1{
 	margin: 0px;
 	line-height: 90px;
-	font-size: 121px;
+	font-size: 126px;
 	font-weight: bold;
-	width: 737px;
-	padding-top: 261px;
-	margin-left:634px;
-	word-wrap: break-word;
+	/*padding-top: 261px;
+	margin-left:634px;*/
+	padding-left:25px;
+	position: absolute;
+	bottom: 0;
+	width: 762px;
 }
 h2{
 	margin: 0px;
 	line-height: 64px;
-	font-size: 84px;
+	font-size: 88px;
 	color: #ef433f;
 	font-weight: lighter;
-	padding-top: 42px;
-	padding-left:650px;
-	width: 737px;
-	word-wrap: break-word;
+	padding-top: 50px;
+	padding-left: 25px;
+	/*padding-left:650px;*/
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 /* ---------------------- ABOUT ---------------------- */
@@ -292,23 +304,25 @@ form label{
 	font-size:62px;
 	font-weight: bold;
 	height:101px;
-	width: 700px;
-	vertical-align: center;
+	width: 710px;
 	background-repeat: no-repeat;
 	vertical-align:center;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .footer div div:first-child{
 	margin-left: 151px;
-	background-image: url(imgs/2.png);
+	background-image: url(../imgs/2.png);
 }
 .footer div div:nth-child(2){
 	margin-left: 50px;
-	background-image: url(imgs/3.png);
+	background-image: url(../imgs/3.png);
 }
 .footer div div:last-child{
 	float:right;
 	margin-right: 121px;
-	background-image: url(imgs/4.png);
+	background-image: url(../imgs/4.png);
 }
 
 

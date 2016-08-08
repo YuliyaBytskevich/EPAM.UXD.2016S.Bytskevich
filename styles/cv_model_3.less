@@ -1,0 +1,406 @@
+/* --------------------- global variables & mixins --------------------- */
+@color-for-bg: #ffffff;
+@color-red: #ef433f;
+@color-darkred: #cf4541;
+@color-grey: #dbdbdb;
+
+.nullify-indents{
+	padding: 0;
+	margin: 0;
+}
+
+.truncate-with-ellipsis{
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.configure-ul{
+	.nullify-indents;
+	list-style-type: none;
+}
+
+.configure-li{
+	font-size: 28px;
+	line-height: 26px;
+	word-wrap: break-word;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.draw-rhombus(@side: 20px){
+    content: '';  
+    background: @color-darkred;
+    height: @side;
+    width: @side;
+    transform: rotate(45deg);
+    line-height: @side * 2;
+    display: block;
+    float: left;
+	margin: @side/4 0 0 @side/4;
+}
+
+/* ----------------------- common rules ----------------------- */
+html{
+	min-height:100%;
+	position: relative;
+}
+
+body{
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	background-color: @color-for-bg;
+	margin: 0 0 100px 0;
+	padding: 0;
+}
+
+p{
+	margin: 0;
+	line-height: 30px;
+	word-wrap: break-word;
+}
+
+h3{	
+	background-color: @color-grey;
+	font-size: 22px;
+	font-weight: bold;
+	.truncate-with-ellipsis;
+	height: 36px;
+	margin: 0 0 20px 0;
+	padding: 6px 0 0 10px;
+}
+
+.col-md-7, 
+.col-md-5{
+	padding: 0 4% 0 0;
+	margin-bottom: 40px;
+}
+
+/* ----------------------- HEADER rules ----------------------- */
+.header{
+
+	.photo-container{
+		float: left;
+		width: 45%;
+		background-color: @color-darkred;	
+		margin-left: -12%;
+		
+		.header-image{
+			width: 60%;
+			margin: 6% 10% 6% 28%
+		}
+	}
+	
+	div{
+	
+		div{
+			margin-left: 36%;
+			position: relative;
+			height: 157px;
+			word-wrap: break-word;
+			
+			h1{
+				margin: 0;
+				font-size: 65px;
+				font-weight: bold;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			}
+		}
+		
+		h2{
+			margin: 5px 0 0 0;
+			font-size: 45px;
+			color: @color-red;
+			font-weight: lighter;
+			padding-left: 3%;
+			.truncate-with-ellipsis;
+		}
+	}
+}
+
+/* ----------------- PERSONAL DATA rules ----------------- */
+.personal-data{
+
+	h3{
+		margin-top: 100px;
+	}
+	
+	form{
+		font-size: 20px;
+		width: 100%;
+		
+		.form-group{
+			margin: 0;
+			
+			label{
+				text-align: left;
+				.nullify-indents;
+			}
+			
+			input{
+				border: none;
+				.nullify-indents;
+			}
+		}
+	}
+}
+
+/* ---------------------- ABOUT rules ---------------------- */
+.about{
+	padding: 0 4% 0 0;
+	
+	h3{
+		margin-bottom: 10px;
+	}
+	
+	p{
+		line-height: 24px;
+		font-size: 21px;
+		font-weight: bold;
+		width: 95%;
+	}
+}
+
+/* ----------------- WORK EXPERIENCE rules----------------- */
+.work-experience{
+	padding: 0 4% 0 0;
+	
+	h3{
+		margin-bottom: 50px;
+	}
+	
+	ul{
+		.configure-ul;
+		
+		li{	
+			.configure-li;
+			
+			div{
+				display: inline-block;
+				vertical-align: top;
+				
+				&:first-child{
+					width: 28%;	
+					text-align: center;
+				}
+				
+				&:last-child{
+					width: 64%;
+				}
+				
+				h4{
+					color:red;
+					margin: 0;
+					font-size:inherit;
+					font-weight: inherit;
+				}
+				
+				h5{
+					margin: 0;
+					font-size:inherit;
+					font-weight: bold;
+				}
+			}
+			
+			&:before{
+				.draw-rhombus;
+			}
+		}
+	}
+}
+
+
+/* ----------------- FORMAL EDUCATION rules ----------------- */
+.formal-education{
+	&:extend(.work-experience);
+		
+	h3{
+		margin-bottom: 15px;
+	}
+	
+	ul{
+		.configure-ul;
+		
+		li{
+			.configure-li;
+		
+			div{
+				&:extend(.work-experience ul li div);
+					
+				h4{
+					&:extend(.work-experience ul li div h4);
+				}
+				
+				h5{
+					&:extend(.work-experience ul li div h5);
+				}
+				
+				&:first-child{
+					width: 33%;		
+					text-align: center;
+					line-height: 28px;
+				}
+				
+				&:last-child{
+					width: 58%;
+				}
+			}
+			
+			&:before{
+				.draw-rhombus;
+			}
+		}		
+	}		
+}
+
+
+/* ---------------------- SKILLS rules ---------------------- */
+.skills{
+
+	h3{
+		margin-bottom: 50px;
+	}
+	
+	ul{
+		.configure-ul;
+	
+		li{
+			.configure-li;
+			display: inline-block;
+			margin-bottom: 20px;
+			
+			h6{
+				margin: -5px 0 0 0;
+				line-height: 24px;
+				font-size: 20px;
+				font-weight: bold;
+				width: 47%;
+				display: inline-block;
+				padding-top:10px;
+				padding-right:10px;
+				float:left;
+			}
+			
+			div{
+				height: 26px;
+				width: 53%;
+				background-color: #dbdbdb;
+				.nullify-indents;
+				border: none;
+				border-radius: 0;
+				float: right;
+				
+				div{
+					background-color: #cf4541;
+					float: left;
+					
+					&.leadership{
+						width: 68%;
+					}
+					
+					&.management{
+						width: 90%;
+					}
+					
+					&.writing{
+						width: 56%;
+					}
+					
+					&.teamwork{
+						width: 100%;
+					}
+					
+					&.photoshop{
+						width: 94%;
+					}
+					
+					&.htmlcss{
+						width: 62%;
+					}
+					
+					&.javascript{
+						width: 65%;
+					}
+					
+					&.dreamweaver{
+						width: 82%;
+					}
+					
+					&.logic{
+						width: 100%;
+					}
+					
+					&.artistic{
+						width: 56%;
+					}
+					
+					&.teamworks{
+						width: 90%;
+					}
+					
+					&.intuition{
+						width: 94%;
+					}
+				}
+			}
+			
+			&:nth-child(4n){
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+/* ----------------- FOOTER rules ----------------- */
+.footer{
+	width:100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	
+	div{
+	
+		div{
+			display: inline-block;
+			font-size: 26px;
+			font-weight: bold;
+			height: 50px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			padding-top: 5px;
+			.truncate-with-ellipsis;
+			
+			a{
+				padding-left: 45px;
+				text-decoration: none;
+				color: black;
+			}
+			
+			&:first-child{
+				margin-left: -1%;
+				background-image: url(../imgs/2.png);
+			}
+			
+			&:nth-child(2){
+				margin: 0 10% 0 13%;
+				background-image: url(../imgs/3.png);
+			}
+			
+			&:last-child{
+				width: auto;
+				background-image: url(../imgs/4.png);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

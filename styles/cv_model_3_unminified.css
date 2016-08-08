@@ -1,0 +1,273 @@
+html {
+    min-height: 100%;
+    position: relative
+}
+
+body {
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    background-color: #fff;
+    margin: 0 0 100px;
+    padding: 0
+}
+
+p {
+    margin: 0;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+h3 {
+    background-color: #dbdbdb;
+    font-size: 22px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 36px;
+    margin: 0 0 20px;
+    padding: 6px 0 0 10px
+}
+
+.col-md-5,
+.col-md-7 {
+    padding: 0 4% 0 0;
+    margin-bottom: 40px
+}
+
+.photo-container {
+    float: left;
+    width: 45%;
+    background-color: #cf4541;
+    margin-left: -12%
+}
+
+.header-image {
+    width: 60%;
+    margin: 6% 10% 6% 28%
+}
+
+.header div div {
+    margin-left: 36%;
+    position: relative;
+    height: 157px;
+    word-wrap: break-word
+}
+
+h1 {
+    margin: 0;
+    font-size: 65px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+h2 {
+    margin: 5px 0 0;
+    font-size: 45px;
+    color: #ef433f;
+    font-weight: lighter;
+    padding-left: 3%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.about.col-md-7 {
+    padding: 0 4% 0 0
+}
+
+.about h3 {
+    margin-bottom: 10px
+}
+
+.about p {
+    line-height: 24px;
+    font-size: 21px;
+    font-weight: 700;
+    width: 95%
+}
+
+.work-experience.col-md-7 {
+    padding: 0 4% 0 0
+}
+
+.work-experience h3 {
+    margin-bottom: 50px
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+ul li {
+    font-size: 28px;
+    line-height: 26px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+ul li div {
+    display: inline-block;
+    vertical-align: top
+}
+
+ul li div:first-child {
+    width: 28%;
+    text-align: center
+}
+
+ul li div:last-child {
+    width: 64%
+}
+
+ul li div h4 {
+    color: red;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+ul li div h5 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: 700
+}
+
+.formal-education ul li:before,
+.work-experience ul li:before {
+    content: '';
+    background: #cf4541;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    line-height: 40px;
+    display: block;
+    float: left;
+    margin: 5px 0 0 5px
+}
+
+.personal-data h3 {
+    margin-top: 103px
+}
+
+form {
+    font-size: 20px;
+    width: 100%
+}
+
+.personal-data .col-md-5,
+.personal-data .col-md-7 {
+    padding: 0;
+    margin: 0
+}
+
+.form-horizontal .form-group {
+    margin: 0
+}
+
+.form-horizontal .control-label {
+    text-align: left
+}
+
+form input {
+    border: none
+}
+
+.formal-education h3 {
+    margin-bottom: 15px
+}
+
+.formal-education ul li div:last-child {
+    width: 58%
+}
+
+.formal-education ul li div:first-child {
+    width: 33%;
+    text-align: center;
+    line-height: 28px
+}
+
+.skills h3 {
+    margin-bottom: 50px
+}
+
+.skills ul li {
+    display: inline-block;
+    margin-bottom: 20px
+}
+
+.skills ul li:nth-child(4n) {
+    margin-bottom: 40px
+}
+
+.skills ul li h6 {
+    margin: 0;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 47%;
+    display: inline-block;
+    padding-top: 10px;
+    float: left
+}
+
+.skills ul li div {
+    height: 26px;
+    width: 53%;
+    background-color: #dbdbdb;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    float: right
+}
+
+.skills ul li div div {
+    background-color: #cf4541;
+    float: left
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0
+}
+
+.footer div div a {
+    padding-left: 45px;
+    text-decoration: none;
+    color: #000
+}
+
+.footer div div {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 5px
+}
+
+.footer div div:first-child {
+    margin-left: -1%;
+    background-image: url(../imgs/2.png)
+}
+
+.footer div div:nth-child(2) {
+    margin: 0 10% 0 13%;
+    background-image: url(../imgs/3.png)
+}
+
+.footer div div:last-child {
+    width: auto;
+    background-image: url(../imgs/4.png)
+}

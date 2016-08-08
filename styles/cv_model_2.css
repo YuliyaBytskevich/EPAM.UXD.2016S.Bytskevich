@@ -1,0 +1,331 @@
+/* ---------------------- GLOBAL ---------------------- */
+html, body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+.global-wrapper{
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	width: 2880px;
+	margin: 0 auto;
+	min-height:100%;
+	position: relative;
+	background-color: white;
+}
+p{
+	margin: 0 0;
+	line-height: 58px;
+	word-wrap: break-word;
+}
+.content{
+	padding-bottom: 367px;
+	overflow: hidden;
+}
+.content div{
+	width: 47%;
+	margin: 1%;
+	float: left;
+}
+h3{
+	background-color: #dbdbdb;
+	height:60px;	
+	padding-top:8px;
+	padding-left: 37px;
+	font-size: 44px;
+	font-weight: bold;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0 0 20px 0;
+}
+
+
+/* ---------------------- HEADER ---------------------- */
+.photo-container{
+	float:left;
+	width: 605px;
+	height: 459px;
+	background-color: #cf4541;
+}
+.header-image{
+	width: 393px;
+	padding-top: 40px;
+	padding-left: 151px;
+}
+.header div{
+	width: 700px;
+}
+.header div div{
+	position: relative;
+	height: 320px;
+	word-wrap: break-word;
+}
+h1{
+	margin: 0px;
+	line-height: 90px;
+	font-size: 100px;
+	font-weight: bold;
+	padding-left:25px;
+	position: absolute;
+	bottom: 0;
+	width: 762px;
+}
+h2{
+	margin: 0px;
+	line-height: 64px;
+	font-size: 80px;
+	color: #ef433f;
+	font-weight: lighter;
+	padding-top: 20px;
+	padding-left: 25px;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* ---------------------- ABOUT ---------------------- */
+.about h3{
+	margin-bottom: 30px;
+}
+.about p{
+	line-height: 48px;
+	font-size: 42px;
+	font-weight: bold;
+}
+
+/* ----------------- WORK EXPERIENCE ----------------- */
+.work-experience h3{
+	margin-bottom: 120px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 55px;
+	line-height:59px;
+	word-wrap: break-word;
+	margin-bottom:40px;
+	width: 100%;
+}
+.content ul li div{
+	text-align:left;
+}
+ul li div:first-child{
+	width: 315px;		
+	text-align: center;
+}
+ul li div:last-child {
+	width: 900px;
+	padding-left: 20px;
+}
+ul li div h4{
+	color:red;
+	margin: 0;
+	font-size:inherit;
+	font-weight: inherit;
+}
+ul li div h5{
+	margin: 0;
+	font-size:inherit;
+	font-weight: bold;
+}
+.work-experience ul li div p{
+	font-size: 55px;
+	line-height: 55px;	
+}
+.work-experience ul li:before,
+.formal-education ul li:before{
+    content: '';  
+    background: rgb(207,69,65);
+    height: 49px;
+    width: 49px;
+    transform: rotate(45deg);
+    line-height: 2em;
+    display: block;
+    float: left;
+	margin: 25px 0 0 12px;
+}
+
+/* ----------------- PERSONAL DATA ----------------- */
+.personal-data h3{
+	margin-top: 260px;
+	margin-bottom: 63px;
+}
+.personal-data div div{	
+	line-height: 30px;
+	font-size: 40px;
+}
+.personal-data div div div:first-child{
+	width: 321px;
+	font-weight: bold;
+}
+.personal-data div div div{
+	padding: 0 0 18px 0;
+}
+form{
+	line-height: 49px;
+	font-size: 40px;
+	font-weight: bold;
+    width: 800px;
+}
+form input{	
+	line-height: 30px;
+	font-size: 40px;
+	border: none;
+	float: right;
+}
+form label{
+	margin-right: 50px;
+}
+
+
+/* ----------------- FORMAL EDUCATION ----------------- */
+.formal-education h3{
+	margin-bottom: 39px;
+}
+.formal-education ul li div:last-child{
+	width: 433px;
+}
+.formal-education ul li div:first-child{
+	width: 300px;		
+	text-align: center;
+	line-height:35px;
+	padding-top: 15px;
+}
+
+/* ----------------- SKILLS ----------------- */
+.skills{
+	height: 1750px;
+}
+.content .skills div{
+	margin: 0;
+}
+.skills h3{
+	margin-bottom: 120px;
+	display:block;
+}
+.skills ul li{
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.skills ul li:nth-child(4n){
+	margin-bottom: 90px;
+}
+.skills ul li h6{
+	margin: 0;
+	line-height: 38px;
+	font-size: 42px;
+	font-weight: bold;
+	width:430px;
+	display: inline-block;
+	padding-top:10px;
+	float:left;
+}
+.skills ul li div{
+	height: 45px;
+	width: 393px;
+	background-color: #dbdbdb;
+	padding: 0;
+
+}
+.skills ul li div div{
+	background-color: #cf4541;
+	float:left;
+}
+.skills ul li div .leadership-prog{
+	width: 267px;
+}
+.skills ul li div .management-prog{
+	width: 353px;
+}
+.skills ul li div .writing-prog{
+	width: 222px;
+}
+.skills ul li div .teamwork-prog{
+	width: 392px;
+}
+.skills ul li div .photoshop-prog{
+	width: 368px;
+}
+.skills ul li div .htmlcss-prog{
+	width: 242px;
+}
+.skills ul li div .javascript-prog{
+	width: 256px;
+}
+.skills ul li div .dreamweaver-prog{
+	width: 322px;
+}
+.skills ul li div .logic-prog{
+	width: 393px;
+}
+.skills ul li div .artistic-prog{
+	width: 222px;
+}
+.skills ul li div .teamworks-prog{
+	width: 352px;
+}
+.skills ul li div .intuition-prog{
+	width: 368px;
+}
+
+/* ----------------- FOOTER ----------------- */
+.footer{
+	width:100%;
+	height: 200px;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+.footer-content{
+	width: 2880px;
+}
+.footer div div a{
+	padding-left: 130px;
+	text-decoration: none;
+	color: black;
+}
+.footer div div{
+	display: inline-block;
+	font-size:62px;
+	font-weight: bold;
+	height:101px;
+	width: 710px;
+	background-repeat: no-repeat;
+	vertical-align:center;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.footer div div:first-child{
+	background-image: url(../imgs/2.png);
+}
+.footer div div:nth-child(2){
+	margin-left: 300px;
+	background-image: url(../imgs/3.png);
+}
+.footer div div:last-child{
+	float:right;
+	margin-right: 121px;
+	background-image: url(../imgs/4.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
